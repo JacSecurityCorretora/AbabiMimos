@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f9b5b6" />
+  <meta name="description" content="Ababi & Mimos — canecas e presentes personalizados que contam histórias." />
+  <title>Ababi & Mimos</title>
+  <link rel="icon" type="image/png" href="assets/capa.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">✨ Personalizados feitos com carinho • Enviamos para todo o Brasil</div>
+
+  <header class="header" id="inicio">
+    <div class="container nav">
+      <a href="#inicio" class="brand" aria-label="Ababi & Mimos">
+        <div class="brand-mark">
+  <img src="assets/capa.png" alt="Ababi & Mimos"></div>
+        <div>
+          <strong>Ababi & Mimos</strong>
+          <span>Canecas que contam histórias</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#faq">Dúvidas</a>
+        <a class="nav-cta js-whatsapp" href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">PRESENTES QUE TORNAM MOMENTOS INESQUECÍVEIS</span>
+          <h1>Canecas que <em>contam histórias.</em></h1>
+          <p class="hero-text">
+            Transformamos fotos, nomes e frases especiais em presentes únicos,
+            feitos sob encomenda para você.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary js-whatsapp" href="#" target="_blank" rel="noopener">
+              
+              <span>→</span>
+            </a>
+            <a class="btn btn-ghost" href="#catalogo">Ver catálogo</a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="product-showcase">
+            <div class="product-image main-product">
+              <img src="assets/caneca-principal.png" alt="Caneca personalizada Ababi & Mimos"
+                   onerror="this.parentElement.classList.add('image-placeholder'); this.style.display='none';">
+              <div class="placeholder-content">
+                <span>ABABI</span>
+                <small>adicione sua foto em<br><b>assets/caneca-principal.png</b></small>
+              </div>
+            </div>
+            <div class="floating-note note-one">feito com<br><b>carinho ♡</b></div>
+            <div class="floating-note note-two">seu momento,<br><b>do seu jeito</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog-section" id="catalogo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">NOSSO CATÁLOGO</span>
+            <h2>Escolha o seu mimo.</h2>
+          </div>
+          <p>Algumas ideias para inspirar seu próximo presente.</p>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card reveal">
+            <div class="product-photo">
+              <img src="assets/caneca-personalizada.jpg" alt="Caneca personalizada"
+                   onerror="this.parentElement.classList.add('image-placeholder'); this.style.display='none';">
+              <span class="tag">Mais pedido</span>
+              <div class="placeholder-content"><span>CANECA</span><small>assets/caneca-personalizada.jpg</small></div>
+            </div>
+            <div class="product-info">
+              <span class="category">PERSONALIZADOS</span>
+              <h3>Canecas personalizadas</h3>
+              <p>Fotos, nomes, frases e aquela mensagem que só vocês entendem.</p>
+              <a class="product-link js-whatsapp" href="#" target="_blank" rel="noopener">Pedir orçamento <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-photo">
+              <img src="assets/garrafa-personalizada.png" alt="Garrafa personalizada"
+                   onerror="this.parentElement.classList.add('image-placeholder'); this.style.display='none';">
+              <div class="placeholder-content"><span>GARRAFA</span><small>assets/garrafa-personalizada.png</small></div>
+            </div>
+            <div class="product-info">
+              <span class="category">PERSONALIZADOS</span>
+              <h3>Garrafas especiais</h3>
+              <p>Um presente útil e cheio de personalidade para acompanhar a rotina.</p>
+              <a class="product-link js-whatsapp" href="#" target="_blank" rel="noopener">Pedir orçamento <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-photo">
+              <img src="assets/kit-presente.png" alt="Kit presente personalizado"
+                   onerror="this.parentElement.classList.add('image-placeholder'); this.style.display='none';">
+              <span class="tag">Para presentear</span>
+              <div class="placeholder-content"><span>KIT</span><small>assets/kit-presente.png</small></div>
+            </div>
+            <div class="product-info">
+              <span class="category">MIMOS</span>
+              <h3>Kits para momentos especiais</h3>
+              <p>Componha um presente com a cara de quem você ama.</p>
+              <a class="product-link js-whatsapp" href="#" target="_blank" rel="noopener">Montar meu kit <span>→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="catalog-cta reveal">
+          <p>Não encontrou exatamente o que imaginou?</p>
+          <a href="#" class="btn btn-dark js-whatsapp" target="_blank" rel="noopener">Me conte sua ideia →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="como-funciona">
+      <div class="container story-grid">
+        <div class="story-copy reveal">
+          <span class="eyebrow">DO PEDIDO AO MIMO</span>
+          <h2>Seu presente começa com uma ideia.</h2>
+          <p>
+            Você conta o que está imaginando, a gente transforma a ideia em arte
+            e depois prepara tudo com cuidado para chegar até você.
+          </p>
+          <a href="#" class="btn btn-primary js-whatsapp" target="_blank" rel="noopener">Começar meu pedido <span>→</span></a>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step-number">01</span>
+            <div><h3>Conte sua ideia</h3><p>Mande fotos, nome, frase ou referência pelo WhatsApp.</p></div>
+          </div>
+          <div class="step reveal">
+            <span class="step-number">02</span>
+            <div><h3>Aprovamos a arte</h3><p>Você visualiza a proposta antes da produção.</p></div>
+          </div>
+          <div class="step reveal">
+            <span class="step-number">03</span>
+            <div><h3>Produzimos seu mimo</h3><p>Cada peça é preparada sob encomenda com atenção aos detalhes.</p></div>
+          </div>
+          <div class="step reveal">
+            <span class="step-number">04</span>
+            <div><h3>É só presentear</h3><p>Receba em casa e transforme uma lembrança em algo para guardar.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="container quote-wrap reveal">
+        <div class="quote-mark">“</div>
+        <p>Porque os melhores presentes não são apenas objetos.<br><strong>São histórias que a gente pode segurar nas mãos.</strong></p>
+        <span>Ababi & Mimos</span>
+      </div>
+    </section>
+
+    <section class="section about-section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-card reveal">
+          <div class="about-initial">A</div>
+        </div>
+        <div class="about-copy reveal">
+          <span class="eyebrow">SOBRE A ABABI & MIMOS</span>
+          <h2>Pequenos detalhes fazem um presente ser inesquecível.</h2>
+          <p>
+            A Ababi & Mimos nasceu para transformar momentos importantes em
+            lembranças que permanecem. Cada peça é pensada para ter um toque
+            pessoal e fazer sentido para quem recebe.
+          </p>
+          <div class="mini-stats">
+            <div><b>100%</b><span>personalizado</span></div>
+            <div><b>♡</b><span>feito com carinho</span></div>
+            <div><b>BR</b><span>envio nacional</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="final-cta">
+      <div class="container final-cta-inner reveal">
+        <div>
+          <span class="eyebrow">SEU PRÓXIMO MIMO COMEÇA AQUI</span>
+          <h2>Vamos transformar sua ideia em um presente?</h2>
+        </div>
+        <a href="#" class="btn btn-light js-whatsapp" target="_blank" rel="noopener">Falar no WhatsApp <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="section-heading reveal">
+          <span class="eyebrow">FICOU COM DÚVIDA?</span>
+          <h2>Perguntas frequentes.</h2>
+          <p>Não encontrou a resposta? Chame a gente no WhatsApp.</p>
+        </div>
+
+        <div class="faq-list reveal">
+          <details>
+            <summary>Posso mandar minha própria foto?</summary>
+            <p>Sim. Você pode enviar suas fotos e referências pelo WhatsApp para montarmos a personalização.</p>
+          </details>
+          <details>
+            <summary>Posso pedir uma arte que não está no catálogo?</summary>
+            <p>Claro. O catálogo serve como inspiração. Conte o que você imaginou e avaliamos a melhor composição.</p>
+          </details>
+          <details>
+            <summary>Vocês enviam para todo o Brasil?</summary>
+            <p>Sim. Consulte as condições de envio para sua cidade diretamente pelo WhatsApp.</p>
+          </details>
+          <details>
+            <summary>Quanto tempo leva para ficar pronto?</summary>
+            <p>O prazo depende do produto e da demanda do momento. Envie sua data para verificarmos a disponibilidade.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="brand footer-brand">
+        <div class="brand-mark">
+         <img src="assets/capa.png" alt="Ababi & Mimos"></div>
+        <div><strong>Ababi & Mimos</strong><span>Canecas que contam histórias</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#" class="js-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Ababi & Mimos. Todos os direitos reservados.</span>
+      <span>Feito com carinho ♡</span>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float js-whatsapp" target="_blank" rel="noopener" aria-label="Falar com a Ababi & Mimos no WhatsApp"></a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -15,16 +15,13 @@ const CONFIG = {
 document.addEventListener("DOMContentLoaded", () => {
 // CONFIGURA TODOS OS BOTÕES DO WHATSAPP
   const whatsappLinks = document.querySelectorAll(".js-whatsapp");
-
   const whatsappUrl = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`;
-
   whatsappLinks.forEach((link) => {
     link.href = whatsappUrl;
   });
 
 // SITE CATÁLOGO
   const siteLinks = document.querySelectorAll(".js-site");
-
   const siteUrl = "https://ababiemimos.com.br/catalogo.html";
   siteLinks.forEach((link) => {
     link.href = siteUrl;
@@ -37,13 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
 // MENU MOBILE
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".nav-links");
-
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
       const opened = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", String(opened));
     });
-
     nav.querySelectorAll("a").forEach((item) => {
       item.addEventListener("click", () => {
         nav.classList.remove("is-open");
@@ -54,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ANIMAÇÕES DE ENTRADA
   const revealItems = document.querySelectorAll(".reveal");
-
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -64,9 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
           observer.unobserve(entry.target);
         });
       },
-      { threshold: 0.12 }
-    );
-
+      { threshold: 0.12 });
     revealItems.forEach((item) => observer.observe(item));
   } else {
     revealItems.forEach((item) => item.classList.add("is-visible"));

@@ -4,7 +4,7 @@
 
 // CONFIGURAÇÕES GERAIS
 const CONFIG = {
-  whatsapp: "5511996628267",
+  whatsapp: "5511921703906",
 
 // Mensagem padrão enviada ao clicar nos botões.
   whatsappMessage: "Olá! Vi o catálogo da Ababi & Mimos e gostaria de saber mais."
@@ -76,3 +76,4 @@ document.addEventListener("DOMContentLoaded", () => {
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
 });
+
